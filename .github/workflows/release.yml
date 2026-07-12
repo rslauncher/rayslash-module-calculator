@@ -8,7 +8,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: dtolnay/rust-toolchain@stable
+      - uses: dtolnay/rust-toolchain@1.92.0
+        with:
+          targets: wasm32-unknown-unknown
       - run: cargo install cargo-component --locked --version 0.21.1
       - run: cargo component build --release --locked --target wasm32-unknown-unknown
       - uses: actions/checkout@v4
@@ -27,4 +29,3 @@ jobs:
           files: |
             rayslash.calculator-*.tar.zst
             rayslash.calculator-*.sha256
-
