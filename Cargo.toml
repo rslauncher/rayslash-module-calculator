@@ -1,0 +1,21 @@
+[package]
+name = "rayslash-module-calculator"
+version = "1.0.0"
+edition = "2024"
+license = "MIT"
+repository = "https://github.com/rslauncher/rayslash-module-calculator"
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+fend-core = "1.5.8"
+wit-bindgen-rt = { version = "0.44.0", features = ["bitflags"] }
+
+[package.metadata.component]
+package = "rayslash:calculator"
+
+[package.metadata.component.target]
+path = "wit"
+world = "module"
+
