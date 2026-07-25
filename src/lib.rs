@@ -31,7 +31,7 @@ impl Guest for Component {
                 id: format!("calculator:{}", expression.to_ascii_lowercase()),
                 title,
                 subtitle: format!("Calculate: {expression}"),
-                icon: Icon::Text("=".into()),
+                icon: Icon::PackagePath("icon.svg".into()),
                 score: None,
                 action,
             }],

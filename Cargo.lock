@@ -16,7 +16,7 @@ checksum = "59b16d394a9991c9b0fee89855daafc7c6cd341be9528ac8b45f9b7aed3d8be8"
 
 [[package]]
 name = "rayslash-module-calculator"
-version = "1.0.2"
+version = "1.0.3"
 dependencies = [
  "fend-core",
  "wit-bindgen-rt",
